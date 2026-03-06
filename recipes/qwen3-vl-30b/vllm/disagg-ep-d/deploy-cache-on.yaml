@@ -20,7 +20,7 @@ spec:
           value: tcp
       extraPodSpec:
         mainContainer:
-          image: dynamo:latest-vllm-runtime
+          image: nvcr.io/nvstaging/ai-dynamo/vllm-runtime:1.0.0rc4-cuda13-amd64
           imagePullPolicy: IfNotPresent
           workingDir: /workspace
       replicas: 1
@@ -60,7 +60,7 @@ spec:
             - python3
             - -m
             - dynamo.vllm
-          image: dynamo:latest-vllm-runtime
+          image: nvcr.io/nvstaging/ai-dynamo/vllm-runtime:1.0.0rc4-cuda13-amd64
           imagePullPolicy: IfNotPresent
           env:
             - name: HF_HOME
@@ -108,7 +108,7 @@ spec:
             - python3
             - -m
             - dynamo.vllm
-          image: dynamo:latest-vllm-runtime
+          image: nvcr.io/nvstaging/ai-dynamo/vllm-runtime:1.0.0rc4-cuda13-amd64
           imagePullPolicy: IfNotPresent
           env:
             - name: HF_HOME

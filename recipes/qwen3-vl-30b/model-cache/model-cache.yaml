@@ -6,7 +6,7 @@ metadata:
   name: model-cache
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: 100Gi
@@ -18,7 +18,7 @@ metadata:
   name: compilation-cache
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: 10Gi
@@ -30,7 +30,7 @@ metadata:
   name: perf-cache
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: 50Gi
