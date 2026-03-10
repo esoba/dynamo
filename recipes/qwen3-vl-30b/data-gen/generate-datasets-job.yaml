@@ -41,7 +41,7 @@ spec:
               NUM_REQUESTS=500
               IMAGES_PER_REQUEST=3
               USER_TEXT_TOKENS=320
-              IMAGE_MODE=http
+              IMAGE_MODE=base64
               TOTAL_SLOTS=$((NUM_REQUESTS * IMAGES_PER_REQUEST))
 
               declare -A POOLS=(

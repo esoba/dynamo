@@ -43,6 +43,8 @@ Each dataset is hardcoded to have 500 requests and 320 tokens of user-input text
    - `image: <your-dynamo-image>` in all `vllm/*/deploy.yaml` files
    - `NAMESPACE=your-namespace` and `HF_TOKEN="your-token"` in the setup commands
 
+4.
+
 ## Directory setup
 
 Each `vllm/<config>` directory contains `deploy.yaml` and `perf.yaml` that set up Dynamo and benchmark with [AIPerf](https://github.com/ai-dynamo/aiperf), respectively. A shared `vllm/analysis.yaml` performs post-run analysis for any configuration.
